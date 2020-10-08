@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Discrete Math homework code - Pham Huy Hoang</title>
+    <link rel="icon" href="images/hcmiu_logo.png">
+    <link rel="stylesheet" href="stylesheet/hw4_fibonacci.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script> 
+      $(function(){
+        $("#page-header").load("header.html");
+        $("#nav-bar").load("nav.html");
+        $("#page-footer").load("footer.html");
+        }
+      )
+    </script>
+  </head>
+  <body>
+    <div id="page-header"></div>
+    <nav id="nav-bar"></nav>
+
+    <script src="scripts/hw4_fibonacci.js"></script>
+
+    <h1>Program to calculate Fibonacci number from given integer number</h1>
+    <label for="input">Input</label>
+    <input type="text" id="input" name="input"><br>
+    <table>
+      <tr>
+        <td><input type="button" id="recursive-button" value="Recursive algorithm"></td>
+        <td><input type="button" id="non-recursive-button" value="Non-recursive algorithm"></td>
+      </tr>
+    </table>
+    <div id="result"></div>
+    <footer id="page-footer"></footer>
+  </body>
+</html>
